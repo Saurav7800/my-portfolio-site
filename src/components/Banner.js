@@ -1,12 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react"; 
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
     const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-    const toRotate = ["Web Developer", "App Developer", "UI/UX Designer", "GIS Developer", "DevOps Engineer", "Digital Marketer"];
-    const [text, setText] = useState(toRotate[0]); // Start with the first title
+
+    const toRotate = useMemo(() => [
+        "Web Developer", 
+        "App Developer", 
+        "UI/UX Designer", 
+        "GIS Developer", 
+        "DevOps Engineer", 
+        "Digital Marketer"
+    ], []);
+
+    const [text, setText] = useState(toRotate[0]); 
 
     useEffect(() => {
         const ticker = setInterval(() => {
@@ -15,7 +24,7 @@ export const Banner = () => {
             setCurrentTitleIndex(nextTitleIndex);
         }, 1000);
 
-        // Cleanup interval when the component unmounts
+       
         return () => clearInterval(ticker);
     }, [currentTitleIndex, toRotate]);
 
@@ -33,7 +42,7 @@ export const Banner = () => {
 
                     </Col>
                     <Col xs={6} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
+                        <img src={headerImg} alt="Saurav's Banner" />  {/* Also adjusted alt text for clarity */}
                     </Col>
                 </Row>
             </Container>

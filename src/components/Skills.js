@@ -42,26 +42,26 @@ export const Skills = () => {
                             <p>In my digital journey, I've dabbled with AWS's expansive suite, crafted stories with React JS and Django, and deciphered geographic tales using OpenLayers. With a palette that includes Python, Java, and the classic web trifecta - HTML, CSS, JavaScript - I'm always ready to paint the next digital masterpiece. Whether it's diving deep into databases, venturing into the vibrant world of digital marketing, or sprinkling some Adobe Photoshop magic, I'm all about blending tech and creativity. Let's explore what we can create together!</p>
                             <Carousel responsive={responsive} infinite={true} className="Skill-slider">
                                 <div className="item" style={itemStyle}>
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="95" />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item" style={itemStyle}>
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} alt="80" />
                                     <h5>Android Development</h5>
                                 </div>
                                 <div className="item" style={itemStyle}>
-                                    <img src={meter3} alt="Image" />
+                                    <img src={meter3} alt="90" />
                                     <h5>GIS Development</h5>
                                 </div>
                                 <div className="item" style={itemStyle}>
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="95" />
                                     <h5>Cloud Technology</h5>
                                 </div>
                                 <div className="item" style={itemStyle}>
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="90" />
                                     <h5>Digital Marketing</h5>
                                 </div><div className="item" style={itemStyle}>
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} alt="80" />
                                     <h5>Graphic Designing</h5>
                                 </div>
                             </Carousel>                        
@@ -69,7 +69,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp}/>
+            <img className="background-image-left" src={colorSharp} alt=""/>
         </section>
       )
 }
